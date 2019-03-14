@@ -1,0 +1,5 @@
+# modules
+
+*.csproj
+*.DotSettings.user
+*.lock
