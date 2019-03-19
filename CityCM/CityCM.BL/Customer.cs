@@ -15,7 +15,19 @@ namespace CityCM.BL
 
         public string FullName
         {
-            get { return LastName + "," + FirstName; }
+            get {
+                string fullName = LastName;
+                if (!string.IsNullOrWhiteSpace(FirstName))
+                {
+                    if (!string.IsNullOrWhiteSpace(fullName))
+                    {
+                        fullName += ", ";
+                    }
+                    fullName += FirstName;
+                }
+
+                return fullName;
+            }
         }
         
         private string _lastName;
@@ -29,3 +41,4 @@ namespace CityCM.BL
         
     }
 }
+ 
