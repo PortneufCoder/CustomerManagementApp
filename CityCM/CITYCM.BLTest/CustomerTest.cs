@@ -1,5 +1,4 @@
-﻿using System;
-using CityCM.BL;
+﻿using CityCM.BL;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CITYCM.BLTest
