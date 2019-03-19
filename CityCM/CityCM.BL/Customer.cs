@@ -29,7 +29,11 @@ namespace CityCM.BL
                 return fullName;
             }
         }
-        
+        // the static modifier is used on members of the Class itself instead of instance of objects created from it
+
+        public static int InstanceCount { get; set; }
+
+
         private string _lastName;
 
         public string LastName
