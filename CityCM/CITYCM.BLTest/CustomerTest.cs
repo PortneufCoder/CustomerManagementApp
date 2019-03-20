@@ -74,5 +74,23 @@ namespace CITYCM.BLTest
             // Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void ValidateMissingLastName()
+        {
+            // Arrange
+            var customer = new Customer
+            {
+                EmailAddress = "ivanterrible@turk.to"
+            };
+
+            var expected = false;
+
+            // Act
+            var actual = customer.Validate();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

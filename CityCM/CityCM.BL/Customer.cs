@@ -1,8 +1,20 @@
 ﻿
+using System.Collections.Generic;
+
 namespace CityCM.BL
 {
     public class Customer
     {
+        public Customer()
+        {
+            
+        }
+
+        public Customer(int customerId)
+        {
+            CustomerId = customerId;
+        }
+
         public int CustomerId { get; private set; }
         public string EmailAddress { get; set; }
 
@@ -42,6 +54,12 @@ namespace CityCM.BL
         public Customer Retrieve(int customerId)
         {
             return new Customer();
+        }
+
+        // Retrieve all customers
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
         }
 
 
