@@ -56,5 +56,23 @@ namespace CITYCM.BLTest
 
             Assert.AreEqual(3, Customer.InstanceCount);
         }
+
+        [TestMethod]
+        public void ValidateValid()
+        {
+            var customer = new Customer
+            {
+                LastName = "Terrible",
+                EmailAddress = "ivanterrible@turk.to"
+            };
+
+            var expected = true;
+
+            // Act
+            var actual = customer.Validate();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
