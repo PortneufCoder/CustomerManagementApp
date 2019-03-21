@@ -30,7 +30,7 @@ namespace CityCM.BL
                     {
                         fullName += ", ";
                     }
-                    fullName += FirstName;
+                    fullName += FirstName; 
                 }
 
                 return fullName;
