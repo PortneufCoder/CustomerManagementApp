@@ -40,28 +40,7 @@ namespace CityCM.BL
 
         public static int InstanceCount { get; set; }
 
-
-        private string _lastName;
-
-        public string LastName
-        {
-            get { return _lastName; }
-
-            set { _lastName = value; }
-        }
-        
-        // Retrieve one customer
-        public Customer Retrieve(int customerId)
-        {
-            return new Customer();
-        }
-
-        // Retrieve all customers
-        public List<Customer> Retrieve()
-        {
-            return new List<Customer>();
-        }
-
+        public string LastName { get; set; }
 
         // Validates the customer data
         public bool Validate()
